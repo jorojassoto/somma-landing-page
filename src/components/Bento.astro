@@ -1,0 +1,65 @@
+---
+import BentoItem from "./BentoItem.astro";
+---
+
+<section
+    class={`
+    w-full max-w-[1400px]
+    grid grid-cols-10 auto-rows-[25rem] gap-4
+    mx-auto p-20
+    `}
+>
+    <BentoItem
+        class="col-span-10 md:col-span-4"
+        title="UN DEPTO PARA CADA SITUACIÓN"
+    >
+        <div
+            slot="image"
+            class="absolute left-0 top-0 bottom-0 w-full
+        h-full group-hover:scale-110 transition-scale duration-1000
+        ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover
+        bg-no-repeat bg-blue-950 -z-10"
+            style="background-image: url('/imagen4.webp');"
+        >
+        </div>
+        <p slot="content" class="max-w-xl">Con nuestro servicio personalizado encontraremos tu depto ideal.</p>
+    </BentoItem>
+    <BentoItem class="col-span-10 md:col-span-6" title="SUMA DISEÑO A TU VIDA">
+        <div
+            slot="image"
+            class="absolute left-0 top-0 bottom-0 w-full
+    h-full group-hover:scale-110 transition-scale duration-1000
+    ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover
+    bg-no-repeat bg-blue-950 -z-10"
+            style="background-image: url('/imagen1.webp');"
+        >
+        </div>
+        <p slot="content" class="max-w-xl">Depto equipado con cocina (refrigerador, microondas), luminaria, cortinas roller, router, acceso electrónico, petfriendly, gasto común fijo y sin comisión.</p>
+    </BentoItem>
+    <BentoItem class="col-span-10 md:col-span-6" title="SUMA ESPACIOS A TU DÍA A DÍA">
+        <div
+            slot="image"
+            class="absolute left-0 top-0 bottom-0 w-full
+    h-full group-hover:scale-110 transition-scale duration-1000
+    ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover
+    bg-no-repeat bg-blue-900 -z-10"
+            style="background-image: url('/imagen3.webp');"
+        >
+        </div>
+        <p slot="content" class="max-w-xl">Más de 15 espacios comunitarios: gimnasio, cowork y lavandería 24/7, zona mascotas, quinchos, piscina panorámica y más.</p>
+    </BentoItem>
+    <BentoItem class="col-span-10 md:col-span-4" title="TU ARRIENDO IDEAL EN ÑUÑOA">
+        <div
+            slot="image"
+            class="absolute left-0 top-0 bottom-0 w-full
+    h-full group-hover:scale-110 transition-scale duration-1000
+    ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover
+    bg-no-repeat bg-blue-950 -z-10"
+            style="background-image: url('/imagen5.webp');"
+        >
+        </div>
+        <p slot="content" class="max-w-xl">Sin aval ni comisión. Arrienda con contrato flexible en un edificio petfriendly de estándar hotelero
+
+        </p>
+    </BentoItem>
+</section>

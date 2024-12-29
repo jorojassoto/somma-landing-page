@@ -1,0 +1,18 @@
+---
+import { getI18N } from "../i18n";
+
+const {currentLocale = 'es '}= Astro
+const i18n = getI18N({currentLocale}) 
+---
+
+<section class="text-xl text-left px-10 max-w-[60ch] text-pretty mx-auto my-12">
+    <img class="w-40 mb-10 m-auto" src="/logoo.webp" alt="" />
+    <h1
+        class="text-3xl font-semibold text-center text-wrap mx-auto mb-10 tracking-wide"
+    >
+        {i18n.INTRO_TITLE}<br /> {i18n.INTRO_TITLE_AFTER_BR}
+    </h1>
+    <p set:html={i18n.INTRO_DESCRIPTION_1}></p>
+    <p set:html={i18n.INTRO_DESCRIPTION_2}></p>
+    <p set:html={i18n.INTRO_DESCRIPTION_3}></p>
+</section>
